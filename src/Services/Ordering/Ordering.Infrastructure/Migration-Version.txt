@@ -1,0 +1,9 @@
+﻿Enable-Migrations -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
+
+Add-Migration Ordering00001 -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
+Add-Migration Ordering00002 -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
+Add-Migration Ordering00003 -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
+
+Update-Database -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
+
+Script-Migration -From JobApp00020 -Project Ordering.Infrastructure -StartUp Ordering.API -Verbose
